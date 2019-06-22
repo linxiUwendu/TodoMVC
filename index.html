@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1" name="viewport"/>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <script src="main.js"></script>
+    <script src="model.js"></script>
+    <script src="provider-localStorage.js"></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<embed src="bg1.mp3" autostart="true" loop="true" hidden="true"></embed>
+<!--<audio autoplay="" loop=""><source src="bg.mp3"></audio>-->
+<div class="todoapp">
+<header class="header">
+    <h1 class="color">Todos</h1>
+    <input type="text" class="addtodo" placeholder="Add something to do">
+</header>
+
+    <section class="main">
+<div class="medium">
+    <input class="complete_all" type="checkbox">
+    <ul class="todo_list"></ul>
+</div>
+
+<footer class="footer">
+    <span class="count"></span>
+    <ul class="filters">
+        <li><a class="selected" style="cursor:pointer;">All</a></li>
+        <li><a class="" style="cursor:pointer;">Active</a></li>
+        <li><a class="" style="cursor:pointer;">Completed</a></li>
+    </ul>
+    <button class="clear">Clear completed</button>
+    <!--<span></span>-->
+    <button class="clear_all">Clear all</button>
+</footer>
+
+    </section>
+
+</div>
+<div class="foot">
+    <label class="time"></label>
+    <br>
+    <label class="fun">Obviously, you can't finish the task in a short time.</label>
+    <br>
+    <label class="have_fun">Anyway, click me to have a fun.</label>
+</div>
+
+</body>
+</html>
